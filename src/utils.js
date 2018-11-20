@@ -16,5 +16,11 @@ export default {
       return expandedFormat.format(number);
     }
     return standardFormat.format(number);
+  },
+  formatNumber(number) {
+    return new Intl.NumberFormat().format(number);
+  },
+  isValuePositive(number) {
+    return number > 0;
   }
 }

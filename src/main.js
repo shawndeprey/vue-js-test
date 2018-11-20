@@ -5,6 +5,8 @@ import store from './store'
 
 import 'semantic-ui-css/semantic.css'
 
+// AT 33:34 in screencast 3.
+
 Vue.config.productionTip = false
 
 new Vue({
