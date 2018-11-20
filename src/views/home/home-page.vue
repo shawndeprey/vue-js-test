@@ -34,9 +34,11 @@
       this.formatCurrency = utils.formatCurrency;
     },
     computed: {
-      totalMarketCap() { return this.$store.getters.totalMarketCap },
-      total24HrVolume() { return this.$store.getters.total24HrVolume },
-      totalBTCPercentage() { return this.$store.getters.totalBTCPercentage }
+      ...mapGetters({
+        totalMarketCap: 'totalMarketCap',
+        total24HrVolume: 'total24HrVolume',
+        totalBTCPercentage: 'totalBTCPercentage'
+      })
     }
   }
 </script>
