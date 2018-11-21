@@ -48,7 +48,10 @@ export default new Vuex.Store({
   },
   getters: {
     coins: state => state.coins,
-    loading: state => state.loading
+    loading: state => state.loading,
+    coinDataFromSlug: (state) => (websiteSlug) => {
+      return state.coins.find(coin => coin.website_slug === websiteSlug);
+    }
   },
   modules: {
     market: market
