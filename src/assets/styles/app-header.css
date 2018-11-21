@@ -20,6 +20,7 @@
 
 #v-select.v-select {
   border: #000;
+  min-width: 200px;
 }
 
 .search.link.icon {
@@ -27,6 +28,10 @@
   color: #FFF;
   width: 1.8em !important;
   opacity: 1 !important;
+}
+
+.v-select .vs__actions {
+  padding: 0 10px 0 3px;
 }
 
 @media screen and (max-width: 512px) {

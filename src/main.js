@@ -1,11 +1,12 @@
 import Vue from 'vue'
+import VueSelect from 'vue-select'
 import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import 'semantic-ui-css/semantic.css'
+Vue.component('v-select', VueSelect);
 
-// AT 33:34 in screencast 3.
+import 'semantic-ui-css/semantic.css'
 
 Vue.config.productionTip = false
 
